@@ -1,0 +1,87 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[orange]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[top=1.0cm, bottom=1.0cm, left=2cm, right=2cm]{geometry}
+\usepackage{./moderntimeline}
+
+\setlength{\hintscolumnwidth}{2.7cm}
+
+\firstname{Pierre-Alexandre}
+\familyname{VEYRY}
+\title{Étudiant en ingénierie informatique}             
+\address{Les jardins de Paste}{07000 PRIVAS}
+\mobile{06.48.79.87.79}                    
+\email{veyry\_p@epita.fr}
+\extrainfo{20 ans -- Permis B}           
+
+\begin{document}
+
+% Set the scale.
+% I go up to 2013 otherwise some late dates overflow on the entry
+\tlmaxdates{2012}{2015}
+% Set the line width.
+% This automatically sets the space under the top label to be 1pt more
+\tlwidth{0.8ex}
+% Set the labels text size
+\tltext{\tiny}
+
+\maketitle
+
+\section{Cursus}
+
+
+\tlcventry[orange]{2014}{2014}{Systems Engineer}{\href{http://www.orness.com}{ORNESS} then \href{http://www.alten.fr}{Alten}}{Sophia Antipolis}{}
+{Consultant at France T\'el\'ecom
+\begin{itemize}
+ \item Administration of Cfengine, FAI and the software package repository;
+ \item Renewal and industrialization of the software deployment system for Debian/Ubuntu;
+ \item Management of the Gforge (collaborative development web interface) platform;
+ \item Monitoring of the fleet of servers;
+ \item Writing of technical documentation.
+\end{itemize}}
+
+
+\cventry{Janvier 2014 \\à Mai 2014}{Echange international}{Stafforshire University}{}{}{Stafford, Angleterre}
+
+\cventry{2012 - 2017}{Diplôme d'ingénieur en informatique}{EPITA}{Le Kremlin-Bicêtre (94)}{}{Ecole pour l'Informatique et les Techniques Avancées}
+
+\cventry{2009 - 2012}{Baccalauréat}{Mention Très Bien}{Privas (07)}{}{Série scientifique, spécialité Physique-Chimie}
+
+
+\section{Expériences}
+	\subsection{Projets scolaires}
+	\cventry{2014}{Projets scolaires de première année de cycle ingénieur}{}{}{}{Fnmatch, TinyPrintf, Minimake, MyReadIso, Malloc, Formula One, Raytracer, myHTTPd}
+	\cventry{2013}{OC'air}{Logiciel d'OCR (Optical Character Recognition) développé en OCaml}{}{}{\url{http://ocair.areswar.eu}}
+	\cventry{2012 - 2013}{Metastruggle}{Jeu vidéo en 3D réalisé en C\# avec le framework XNA}{}{}{\url{http://fr.metastruggle.eu}}
+
+	\subsection{Expériences professionnelles}
+	
+\cventry{Septembre 2014 \\à Aujourd'hui}{Enseignant assistant (ASM)}{EPITA}{Villejuif}{France}{
+Encadrement des travaux pratiques (programmation en langage C) des élèves de deuxième année de l'école EPITA}
+\cventry{Mai 2014 \\à Juillet 2014}{Développeur stagiaire}{SYDER}{69570 Dardilly}{}{
+\begin{itemize}%
+\item Développement d'un service Web de consultation de données et de simulation avec PHP et Javascript,
+\item Refonte du design du portail Web de l'entreprise et conception de logos thématiques pour chaque service Web de l'entreprise,
+\item Réalisation d'un système très simple de cartographie à partir d'Openlayers et OpenStreetMap pour un des services Web de l'entreprise
+\item Mise en place de machines virtuelles sous GNU/Linux (Debian Squeeze) en vue de l'installation de nouveaux services
+\end{itemize}}
+
+\section{Compétences techniques}
+	\cvitem{Langages}{C, OCaml, C\#, PHP, Javascript, Python, SQL,  HTML, CSS, \LaTeX}{}{}{}{}
+	\cvitem{Systèmes d'exploitation}{GNU/Linux, BSD, Mac OS X, Windows}{}{}{}{}
+	\cvitem{Bases de données}{MySQL, Microsoft SQL Server}{}{}{}{}
+
+
+\section{Langues}
+\cvlanguage{Français}{Langue natale}{}
+\cvlanguage{Anglais}{TOEIC Niveau 945}{}
+\cvlanguage{Allemand}{Niveau B2}{}
+
+\section{Centres d'intérêt}
+
+\cvitem{Arts}{Piano (Cycle III), Musique, Cinéma, Littérature, Histoire de l'Art}{}{}{}{}
+
+\cvitem{Sports}{Triathlon, Canoë-Kayak}{}{}{}{}
+
+
+\end{document}
