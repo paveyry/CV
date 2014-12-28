@@ -6,4 +6,4 @@ all:
 	$(RM) *.aux *.log *.out
 
 clean:
-	$(RM) *.aux *.log *.out *.pdf
+	$(RM) *.aux *.log *.out *.pdf *.gz
