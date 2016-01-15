@@ -1,74 +1,74 @@
 \documentclass[11pt,a4paper]{moderncv}
-\moderncvtheme[red]{classic}                
+\moderncvtheme[red]{classic}
 \usepackage[utf8]{inputenc}
-\usepackage[top=1.0cm, bottom=1.0cm, left=2cm, right=2cm]{geometry}
+\usepackage[top=0.5cm, bottom=0.5cm, left=2cm, right=2cm]{geometry}
 \usepackage{./moderntimeline}
 
 \setlength{\hintscolumnwidth}{2.7cm}
 
 \firstname{Pierre-Alexandre}
 \familyname{VEYRY}
-\title{Étudiant en ingénierie informatique}             
+\title{Étudiant en ingénierie informatique}
 \address{Apt 308, 14 rue Carnot}{94800 VILLEJUIF}
-\mobile{06.48.79.87.79}                    
+\mobile{06.48.79.87.79}
 \email{veyry\_p@epita.fr}
 \homepage{http://pa.veyry.fr}
-\extrainfo{20 ans -- Permis B}           
+\extrainfo{21 ans -- Permis B}
 
 \begin{document}
 
-\tlmaxdates{2011}{2015}
+\tlmaxdates{2011}{2016}
 \tlwidth{0.8ex}
 \tltext{\tiny}
 
 \maketitle
 
+\vspace*{-0.5cm}
+
 \section{Cursus}
+    \tlcventry{2012}{0}{École d'ingénieurs en Informatique}{EPITA}{Le Kremlin-Bicêtre}{}{}
+    \tldatecventry{2014}{Échange international d'un semestre}{Staffordshire University}{Royaume-Uni}{}{}
+    \tldatecventry{2012}{Baccalauréat Scientifique}{Mention Très-Bien}{}{}{}
 
-
-\tlcventry{2012}{0}{École d'ingénieurs en Informatique}{EPITA}{Le Kremlin-Bicêtre}{}{}
-
-\tldatecventry{2014}{Échange international d'un semestre}{Staffordshire University}{Royaume-Uni}{}{}
-
-\tldatecventry{2012}{Baccalauréat Scientifique}{Mention Très-Bien}{}{}{}
 
 \section{Expériences}
-	\subsection{Projets scolaires}
-        \tldatecventry{2015}{MyPhotoshop}{Logiciel de dessin et de traitement d'image en JAVA}{}{}{}
+    \subsection{Emplois et stages}
+        \tlcventry{2015}{2016}{Assistant enseignant (YAKA)}{EPITA}{Villejuif}{France}
+            {Enseignement de C++, JAVA, et SQL aux étudiants de troisième année à l'EPITA}
+        \tldatecventry{2015}{Stage R\&D de 4 mois}{Aerys}{Paris}{France}{Recherche et développement sur le moteur 3D Minko (C++)}
+        \tlcventry{2014}{2015}{Assistant enseignant (ASM)}{EPITA}{Villejuif}{France}
+            {Enseignement du C et d'UNIX aux étudiants de deuxième année à l'EPITA}
+        \tldatecventry{2014}{Développeur Web Stagiaire}{SYDER}{Développement de différentes applications Web en HTML, CSS, Javascript et PHP}{}{}
+
+    \subsection{Projets}
+        \tldatecventry{2015}{Viola-Jones}{Programme de reconnaissance faciale parallélisé en C++}{}{}{}
         \tldatecventry{2015}{Tiger Compiler}{Compilateur pour le langage Tiger en C++}{}{}{}
-        \tldatecventry{2014}{42sh}{Implémentation personnelle de bash --posix en C}{}{}{}
+        \tldatecventry{2014}{42sh}{Implémentation d'un shell UNIX (\texttt{bash ----posix}) en C en groupes de quatre}{}{}{}
         \tldatecventry{2014}{HTTPd}{Serveur HTTP en C}{}{}{}
-        \tldatecventry{2014}{Malloc}{Implémentation de Malloc du type best-fit en C}{}{}{}
+        \tldatecventry{2014}{Malloc}{Implémentation de Malloc selon le modèle Best-Fit en C}{}{}{}
         \tldatecventry{2013}{OCR}{Logiciel de reconnaissance de caractères en OCaml}{}{}{}
         \tlcventry{2012}{2013}{Jeu vidéo}{Metastruggle}{Jeu vidéo de combat en 3D développé en C\# avec XNA}{}{}
 
 
-	\subsection{Emplois et stages}
-	
-        \tlcventry{2015}{0}{Stage R\&D}{Aerys}{Paris}{France}{Recherche et développement sur un moteur 3D à Aerys}
-	\tlcventry{2014}{0}{Assistant enseignant (ASM)}{EPITA}{Villejuif}{France}
-        {Enseignement de C, C++, JAVA, SQL, et UNIX aux élèves de deuxième et troisième année à l'EPITA}
-	\tldatecventry{2014}{Développeur Web}{SYDER}{Développement de différentes applications Web en HTML, CSS, Javascript et PHP}{}{}
-
 \section{Compétences techniques}
-	\subsection{Langages de programmation}
-        \cvitem{Compétent}{C, C++, JAVA, PHP, JS, SQL, \LaTeX}{}{}{}{}
+    \subsection{Langages de programmation}
+        \cvitem{Compétent}{C++, C, JAVA, PHP, JS, SQL, \LaTeX}{}{}{}{}
         \cvitem{Expérimenté}{C\#, OCaml, HTML, CSS}{}{}{}{}
         \cvitem{Débutant}{Python, Swift, Go}{}{}
-	\subsection{Divers}
+    \subsection{Divers}
         \cvitem{Systèmes}{GNU/Linux, Mac OS X, Windows, BSD}{}{}{}{}
         \cvitem{Logiciels}{Git, Blender 3D, Adobe Photoshop, Gimp, Steinberg Cubase}{}{}{}{}
-	
-	\section{Langues}
-	\cvlanguage{Français}{Langue natale}{}
-        \cvlanguage{Anglais}{Avancé (TOEIC:980/990)}{}
-	\cvlanguage{Allemand}{Notions}{}
+
+
+\section{Langues}
+    \cvlanguage{Français}{Langue natale}{}
+    \cvlanguage{Anglais}{Avancé (TOEIC:980/990)}{}
+    \cvlanguage{Allemand}{Notions}{}
+
 
 \section{Centres d'intérêt}
-
-\cvitem{Arts}{Piano (Pratiqué pendant 11 ans), Musique, Cinéma, Littérature, Histoire de l'Art}{}{}{}{}
-
-\cvitem{Sports}{Triathlon, Canoë-Kayak}{}{}{}{}
+    \cvitem{Arts}{Piano (Pratiqué pendant 11 ans), Musique, Cinéma, Littérature, Histoire de l'Art}{}{}{}{}
+    \cvitem{Sports}{Triathlon, Canoë-Kayak}{}{}{}{}
 
 
 \end{document}
