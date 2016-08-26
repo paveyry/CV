@@ -1,10 +1,16 @@
 LATEX=pdflatex
+BUILDER=./resume_builder.py
+EXCLUSIONS=P003,P004,P006,P007,P010
+DATA_DIR=content
 
-all:
-	$(LATEX) cv_fr.tex
-	$(LATEX) cv_en.tex
+all: cv_en.pdf cv_fr.pdf
 	$(RM) *.aux *.log *.out
-	mv *.pdf CV_Web
 
+%.tex:
+	${BUILDER} --exclude-entries=${EXCLUSIONS} ${DATA_DIR}/%.yml > $@
+	
+%.pdf: %.tex
+	$(LATEX) $<
+	
 clean:
-	$(RM) *.aux *.log *.out *.gz
+	$(RM) *.aux *.log *.out *.gz *.pdf
