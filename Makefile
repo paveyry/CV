@@ -7,8 +7,11 @@ PDFS         = ${OUT}/cv_en.pdf ${OUT}/cv_fr.pdf
 TEXS         = $(PDFS:.pdf=.tex)
 TRASH_FILES  = ${OUT}/*.aux ${OUT}/*.log ${OUT}/*.out
 
-all: ${PDFS}
+all: ${PDFS} web
 	${RM} ${TRASH_FILES}
+
+web:
+	cp -r CV_Web/* out/
 
 ${OUT}/%.tex: ${DATA_DIR}/%.yml ${OUT}
 	${BUILDER} --exclude-entries=${EXCLUSIONS} $< > $@
