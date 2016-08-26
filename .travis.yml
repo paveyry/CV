@@ -1,0 +1,16 @@
+sudo: required
+language: python
+
+python:
+    - "3.5"
+
+before_install:
+    - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+    
+install:
+    - pip install docopt
+    - pip install pyyaml
+    - pip install jinja2
+
+script:
+    - make
