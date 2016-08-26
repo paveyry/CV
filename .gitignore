@@ -114,3 +114,6 @@ sympy-plots-for-*.tex/
 # Idea project files
 *.iml
 .idea
+
+# Output directory
+out/
