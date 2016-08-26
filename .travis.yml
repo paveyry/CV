@@ -22,6 +22,7 @@ script:
     - make
     - cd out
     - tar cjvf package.tar.bz2 *
+    - ssh-keygen -R $DEPLOY_HOST
     - export SSHPASS=$DEPLOY_PASS
     - sshpass -e scp package.tar.bz2 $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_PATH
     - sshpass -e ssh $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_PATH/deploy.sh && echo yes || echo no
