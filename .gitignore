@@ -110,3 +110,7 @@ sympy-plots-for-*.tex/
 
 # Vim temporary files
 *.swp
+
+# Idea project files
+*.iml
+.idea
