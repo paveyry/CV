@@ -29,7 +29,7 @@ def load_data(exclusions, yaml_path):
     for category, catval in data['CV'].items():
         for entry in catval['entries']:
             if entry['id'] in exclusions:
-                del entry
+                catval['entries'].remove(entry)
     return data
 
 def make_jinja_env(template_dir, template_file):
