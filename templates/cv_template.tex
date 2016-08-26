@@ -1,0 +1,76 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[red]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[top=0.5cm, bottom=0.5cm, left=2cm, right=2cm]{geometry}
+\usepackage{./moderntimeline}
+
+\setlength{\hintscolumnwidth}{2.7cm}
+
+\firstname{%{{ data.personal_info.firstname %}}}
+\familyname{%{{ data.personal_info.lastname %}}}
+\title{%{{ data.personal_info.title %}}}
+\address{%{{ data.personal_info.address %}}}{%{{ data.personal_info.city %}}}
+\mobile{%{{ data.personal_info.mobile %}}}
+\email{%{{ data.personal_info.email %}}}
+\homepage{%{{ data.personal_info.website %}}}
+\extrainfo{%{{ data.personal_info.website %}}}
+
+\begin{document}
+
+\tlmaxdates{%{{ data.period.begin %}}}{%{{ data.period.end %}}}
+\tlwidth{0.8ex}
+\tltext{\tiny}
+
+\maketitle
+
+\vspace*{-0.5cm}
+
+\section{%{{ data.CV.cursus.name %}}}
+    %{ for entry in data.CV.cursus.entries %}
+        %{ if entry.date %}
+            \tldatecventry{%{{ entry.date %}}}{%{{ entry.title %}}}{%{{ entry.additional_info %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{}
+        %{ else %}
+            \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.title %}}}{%{{ entry.additional_info %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{}
+        %{ endif %}
+    %{ endfor %}
+
+
+\section{%{{ data.CV.jobs.experience_name %}}}
+    \subsection{%{{ data.CV.jobs.name %}}}
+        %{ for entry in data.CV.jobs.entries %}
+            %{ if entry.date %}
+                \tldatecventry{%{{ entry.date %}}}{%{{ entry.title %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
+            %{ else %}
+                \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.title %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
+            %{ endif %}
+        %{ endfor %}
+
+    \subsection{%{{ data.CV.projects.name %}}}
+        %{ for entry in data.CV.projects.entries %}
+            %{ if entry.date %}
+                \tldatecventry{%{{ entry.date %}}}{%{{ entry.name %}}}{%{{ entry.short_desc %}}}{}{}{}
+            %{ else %}
+                \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.name %}}}{%{{ entry.short_desc %}}}{}{}{}
+            %{ endif %}
+        %{ endfor %}
+
+\section{%{{ data.skills.name %}}}
+    %{ for subsection in data.skills.entries %}
+        \subsection{%{{ subsection.name %}}}
+            %{ for entry in subsection.entries %}
+                \cvitem{%{{ entry.name %}}}{%{{ entry.content %}}}{}{}{}{}
+            %{ endfor %}
+    %{ endfor %}
+
+\section{%{{ data.languages.name %}}}
+    %{ for lang in data.languages.entries %}
+        \cvlanguage{%{{ lang.name %}}}{%{{ lang.desc %}}}{}
+    %{ endfor %}
+
+\section{%{{ data.interests.name %}}}
+    %{ for interest in data.interests.entries %}
+        \cvitem{%{{ interest.name %}}}{%{{ interest.desc %}}}{}{}{}{}
+    %{ endfor %}
+
+
+\end{document}
