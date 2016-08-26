@@ -21,7 +21,7 @@ CV:
               period:
                 begin: 2012
                 end:   0
-              title: École d'ingénieurs in Informatique
+              title: École d'ingénieurs en Informatique
               additional_info: Spé SCIA (Machine learning, text mining, image processing\ldots)
               school: EPITA
               city: Le Kremlin-Bicêtre
@@ -85,12 +85,12 @@ CV:
             - id: P012
               date: 2016
               name: LyreLand
-              short_desc: Générateur procédural de musique qui apprend à partir de fichiers MIDI (JAVA8)
+              short_desc: Générateur procédural de musique apprenant de fichiers MIDI (JAVA8)
               long_desc: FIXME
             - id: P011
               date: 2016
               name: Correcteur orthographique
-              short_desc: avec d'importantes contraintes de performances et de mémoire (C++)
+              short_desc: haute performance et faible coût en RAM (C++)
               long_desc: FIXME
             - id: P010
               date: 2016
@@ -115,7 +115,7 @@ CV:
             - id: P006
               date: 2015
               name: MyPhotoshop
-              short_desc: Logiciel de retouche d'images et de dessin (JAVA with Swing)
+              short_desc: Logiciel de retouche d'images et de dessin (JAVA avec Swing)
               long_desc: FIXME
             - id: P005
               date: 2014
