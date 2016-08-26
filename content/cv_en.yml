@@ -1,0 +1,181 @@
+personal_info:
+    firstname: Pierre-Alexandre
+    lastname: Veyry
+    title: Computer Science student and Teaching assistant
+    address: 14 rue Carnot, Appt 308
+    city: 94800 Villejuif
+    mobile: +33 6 48 79 87 79
+    email: veyry\_p@epita.fr
+    website: http://pa.veyry.fr
+    extrainfo: 22 years old
+
+period:
+    begin: 2011
+    end:   2017
+
+
+CV:
+    cursus:
+        name: Cursus
+        entries:
+            - id: C003
+              period:
+                begin: 2012
+                end:   0
+              title: Computer Science college
+              additional_info: SCIA
+              school: EPITA
+              city: Le Kremlin-Bicêtre
+              country: France
+            - id: C002
+              date: 2014
+              title: Exchange semester
+              school: Staffordshire University
+              city: Stafford
+              country: United Kingdom
+            - id: C001
+              date: 2012
+              title: Baccalauréat (Hich School diploma, scientific option)
+              additional_info: with Highest Honours
+              country: France
+
+    jobs:
+        experience_name: Experience
+        name: Jobs and Internships
+        entries:
+            - id: J004
+              period:
+                begin: 2015
+                end:   2016
+              title: Teaching Assistant (YAKA)
+              company: EPITA
+              city: Villejuif
+              country: France
+              short_desc: Teaching C++, JAVA and SQL to third-year students
+              long_desc: FIXME
+            - id: J003
+              date: 2015
+              title: R&D intern (4 months)
+              company: Aerys
+              city: Paris
+              country: France
+              short_desc: Research and development on Minko 3D engine (C++)
+              long_desc: FIXME
+            - id: J002
+              period:
+                begin: 2014
+                end:   2015
+              title: Teaching Assistant (ASM)
+              company: EPITA
+              city: Villejuif
+              country: France
+              short_desc: Supervising second-year students' C and UNIX practice sessions
+              long_desc: FIXME
+            - id: J001
+              date: 2014
+              title: Web development intern (2 months)
+              company: SYDER
+              city: Lyon
+              country: France
+              short_desc: Developing various small web-apps
+
+
+    projects:
+        name: Projects
+        entries:
+            - id: P012
+              date: 2016
+              name: LyreLand
+              short_desc: Music procedural generator that learns from MIDI (Java8).
+              long_desc: FIXME
+            - id: P011
+              date: 2016
+              name: Spell Checker
+              short_desc: Spell checker based on a Trie compiler with strong performance and low memory usage (C++)
+              long_desc: FIXME
+            - id: P010
+              date: 2016
+              name: Barcode reader
+              short_desc: Barcode detector and reader (C++ with OpenCV)
+              long_desc: FIXME
+            - id: P009
+              date: 2015
+              name: Viola-Jones
+              short_desc: Parallelized Facial recognition program (C++)
+              long_desc: FIXME
+            - id: P008
+              date: 2015
+              name: Tiger Compiler
+              short_desc: Compiler for the Tiger Programming Language (C++ with Bison/Flex)
+              long_desc: FIXME
+            - id: P007
+              date: 2015
+              name: Chess
+              short_desc: Chess game and AI (C++)
+              long_desc: FIXME
+            - id: P006
+              date: 2015
+              name: MyPhotoshop
+              short_desc: Raster graphics editor (JAVA with Swing)
+              long_desc: FIXME
+            - id: P005
+              date: 2014
+              name: 42sh
+              short_desc: Implementation of a UNIX shell (bash) (C)
+              long_desc: FIXME
+            - id: P004
+              date: 2014
+              name: MyHTTPd
+              short_desc: HTTP daemon (C)
+              long_desc: FIXME
+            - id: P003
+              date: 2014
+              name: Malloc
+              short_desc: Best-fit malloc implementation (C)
+              long_desc: FIXME
+            - id: P002
+              date: 2013
+              name: OCR
+              short_desc: Optical Character Recognition program (OCaml)
+              long_desc: FIXME
+            - id: P001
+              date: 2012
+              name: Metastruggle
+              short_desc: Super-Smash-Bros-like 3D game (C\#)
+              long_desc: FIXME
+
+skills:
+    name: Technical Skills
+    entries:
+        - name: Programming languages
+          entries:
+            - name: Proficient
+              content: C++, C, JAVA, Python, SQL, \LaTeX
+            - name: Experimented
+              content: PHP, JS, Matlab, C\#, OCaml
+            - name: Beginner
+              content: Go, Swift
+        - name: Miscellaneous
+          entries:
+            - name: Operating systems
+              content: GNU/Linux, MMac OS X, Windows, BSD
+            - name: Software
+              content: Git, Vim, IntelliJ IDEA, Visual Studio, Blender 3D, Adobe Photoshop, Steinberg Cubase
+
+languages:
+    name: Languages
+    entries:
+        - name: French
+          desc: Native speaker
+        - name: English
+          desc: Fluent (TOEIC:980/990)
+        - name: German
+          desc: Notions
+
+interests:
+    name: Interests
+    entries:
+        - name: Music
+          desc: Piano (practiced for 11 years), guitar (beginner), Computer music
+        - name: Others
+          desc: Litterature, Cinema, History
