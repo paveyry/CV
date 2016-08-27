@@ -51,6 +51,20 @@ CV:
     jobs:
         name: Experiences
         entries:
+            - id: J005
+              period:
+                begin: 2016
+                end:   0
+              title: Teaching Assistant (ACU)
+              company: EPITA
+              city: Villejuif
+              country: France
+              short_desc: Teaching UNIX, C, and C++ to third-year students
+              long_desc: >
+                  Organising practical UNIX, C, and C++ programming courses and projects
+                  for 300 students as part of a team of 30 assistants. This job
+                  is in the continuity of the YAKA role, but with students from
+                  a different year and other notions to teach.
             - id: J004
               period:
                 begin: 2015
@@ -60,7 +74,17 @@ CV:
               city: Villejuif
               country: France
               short_desc: Teaching C++, JAVA and SQL to third-year students
-              long_desc: FIXME
+              long_desc: >
+                  Organising practical C++, JAVA, and C programming courses and projects
+                  for 300 students as part of a team of 30 assistants. Our job was to
+                  prepare the subjects, organize courses, help the students understand
+                  programming and debug their code, and check their work. I was responsible
+                  of the Chess project, which includes the development of a complete Chess
+                  game and a chess AI in C++ 14. I am also the quality manager, in charge
+                  of checking all the documents (courses, subjects, exams...) provided
+                  to the students to ensure that the quality (grammar, content, difficulty)
+                  is sufficient.
+
             - id: J003
               date: 2015
               title: R&D intern (4 months)
@@ -68,7 +92,18 @@ CV:
               city: Paris
               country: France
               short_desc: Research and development on Minko 3D engine (C++)
-              long_desc: FIXME
+              long_desc: >
+                  <ul>
+                  <li>Development of a multimedia application controlled with the
+                  hands using a Leap Motion sensor.</li>
+                  <li>Development of an IFC 3D model import plugin for the Minko 3D
+                  Engine (C++).</li>
+                  <li>Development of an interactive virtual visit app using Oculus
+                  Rift DK2 base on the Minko 3D Engine (C++).</li>
+                  <li>Implementation of clipping planes inside the Minko 3D Application
+                  to allow users to see inside 3D models (C++).</li></ul>
+
+
             - id: J002
               period:
                 begin: 2014
@@ -78,7 +113,15 @@ CV:
               city: Villejuif
               country: France
               short_desc: Supervising second-year students' C and UNIX practice sessions
-              long_desc: FIXME
+              long_desc: >
+                  Teaching UNIX and C Programming to a thirty students classes.
+                  My mission as Teaching assistant at EPITA was to supervise
+                  second-year practice class. I taught UNIX, GNU/Linux and C
+                  Programming to a class of thirty students. This gave me the
+                  opportunity to improve my teaching skills my technical skills 
+                  nd my pedagogical abilities.
+
+
             - id: J001
               date: 2014
               title: Web development intern (2 months)
@@ -86,6 +129,15 @@ CV:
               city: Lyon
               country: France
               short_desc: Developing various small web-apps
+              long_desc: >
+                  The SYDER is a town union responsible for energy and public
+                  lighting of a great part of the department of Rhône (France).
+                  My mission inside the company was to develop a Web App allowing
+                  town councils to consult their charges, and to simulate their
+                  budget knowing the ongoing projects.
+                  I also improved the Web Design of the Extranet portal and
+                  I developed a small cartography system based on OpenLayers
+                  and OpenStreetMap.
 
 
     projects:
@@ -94,66 +146,110 @@ CV:
             - id: P012
               date: 2016
               name: LyreLand
-              short_desc: Music procedural generator that learns from MIDI (Java8).
-              long_desc: FIXME
               url: https://github.com/paveyry/LyreLand
+              short_desc: Music procedural generator that learns from MIDI (Java8).
+              long_desc: >
+                  End of studies' project. Developed with JAVA 8 and completely
+                  open-source, LyreLand embodies several modules:<ul>
+                  <li>harmonic, rhythmic, and melodic analysis of MIDI files</li>
+                  <li>machine-learning to learn new music genres using the analysed data</li>
+                  <li>generation to compose music using the trained data</li></ul>
+
             - id: P011
               date: 2016
               name: Spell Checker
               short_desc: using a Trie compiler with strong performance and low memory usage (C++)
-              long_desc: FIXME
+              long_desc: >
+                  Spell checker developed in C++ with important memory and
+                  performance constraints. The project is split in two parts:<ul>
+                  <li>A compiler, which reads a text dictionary, builds a Trie,
+                  and serializes it into a binary contiguous file that allows
+                  direct search without reconstructing the Trie in RAM.</li>
+                  <li>A spell-checker that directly reads the dictionary on SSD
+                  using mmap to allow a great number of requests per second
+                  without spending time reconstructing the trie in RAM.</li></ul>
+
             - id: P010
               date: 2016
               name: Barcode reader
               short_desc: Barcode detector and reader (C++ with OpenCV)
-              long_desc: FIXME
+              long_desc: >
+                  Program developed in C++ with OpenCV. It can detect several
+                  barcodes in a photograph, and read their value.
+
             - id: P009
               date: 2015
               name: Viola-Jones
-              short_desc: Parallelized Facial detection program (C++ with TBB)
-              long_desc: FIXME
               url: https://github.com/paveyry/FaceDetection
+              short_desc: Parallelized Facial detection program (C++ with TBB)
+              long_desc: >
+                  C++ implementation of the Viola and Jones method for Facial
+                  detection. Parallel computing was implemented using Intel TBB.
+
             - id: P008
               date: 2015
               name: Tiger Compiler
               short_desc: Compiler for the Tiger Programming Language (C++ with Bison/Flex)
-              long_desc: FIXME
+              long_desc: >
+                  A compiler for the Tiger Programming Language developed in C++ 
+                  using GNU Bison and Flex inspired of Andrew Appel's
+                  'Modern Compiler Implementation' book. Front-end producing
+                  TREE intermediate language, back-end producing MIPS and IA-32
+                  assembly languages.
+
             - id: P007
               date: 2015
               name: Chess
               short_desc: Chess game and AI (C++)
-              long_desc: FIXME
+              long_desc: >
+                  Chessboard and engine developed in C++ with a plugin system
+                  for game logging and AI loading. We also developed an AI
+                  plugin using a Minimax algorithm.
+
             - id: P006
               date: 2015
               name: MyPhotoshop
               short_desc: Raster graphics editor (JAVA with Swing)
-              long_desc: FIXME
+              long_desc: >
+                  Small raster graphics editor written in JAVA 8 with Swing. It embodies
+                  several features such as tab panes, interactive modification history,
+                  convolution matrices filters, painting brushes, i18n, custom skins management,
+                  external filters loading...
+
             - id: P005
               date: 2014
               name: 42sh
               short_desc: Implementation of a UNIX shell (bash) (C)
-              long_desc: FIXME
+              long_desc: >
+                  C implementation of bash --posix (UNIX shell) with SCL parsing
+                  using a custom AST, custom readline, and working execution and builtins.
+
             - id: P004
               date: 2014
               name: MyHTTPd
               short_desc: HTTP daemon (C)
-              long_desc: FIXME
+              long_desc: >
+                  HTTP daemon written in C handling heavy charges (C10K) using
+                  epoll to implement non-blocking I/O.
+
             - id: P003
               date: 2014
               name: Malloc
               short_desc: Best-fit malloc implementation (C)
-              long_desc: FIXME
+              long_desc: >
+                  Implementation of malloc using mmap for chunk allocation and
+                  based on the best-fit algorithm.
+
             - id: P002
               date: 2013
               name: OCR
               short_desc: Optical Character Recognition program (OCaml)
-              long_desc: FIXME
+
             - id: P001
               date: 2012
               name: Metastruggle
-              short_desc: Super-Smash-Bros-like 3D game (C#)
-              long_desc: FIXME
               url: https://github.com/paveyry/Metastruggle
+              short_desc: Super-Smash-Bros-like 3D game (C#)
 
 skills:
     name: Technical Skills

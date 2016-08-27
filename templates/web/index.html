@@ -117,7 +117,13 @@
                             <div class="company">%{{ entry.company %}}, %{{ entry.city %}}, %{{ entry.country %}}</div>
                         </div><!--//meta-->
                     <div class="details">
-                        <p>%{{ entry.short_desc %}}</p>  
+                        <p>
+                          %{ if entry.long_desc %}
+                              %{{ entry.long_desc %}}
+                          %{ else %}
+                              %{{ entry.short_desc %}}
+                          %{ endif %}
+                        </p>  
                     </div><!--//details-->
                 </div><!--//item-->
                 %{ endfor %}
@@ -132,7 +138,11 @@
                                 %{{ entry.name %}}
                             </a>
                         </span> - <span class="project-tagline">
-                            %{{ entry.short_desc %}}
+                          %{ if entry.long_desc %}
+                              %{{ entry.long_desc %}}
+                          %{ else %}
+                              %{{ entry.short_desc %}}
+                          %{ endif %}
                         </span>
                     </div>
                 %{ endfor %}

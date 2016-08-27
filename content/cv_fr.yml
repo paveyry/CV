@@ -52,6 +52,15 @@ CV:
     jobs:
         name: Expérience professionnelle
         entries:
+            - id: J005
+              period:
+                begin: 2016
+                end:   0
+              title: Assistant enseignant (ACU)
+              company: EPITA
+              city: Villejuif
+              country: France
+              short_desc: Enseignement de UNIX, C, et C++ aux étudiants de troisième année.
             - id: J004
               period:
                 begin: 2015
@@ -61,7 +70,6 @@ CV:
               city: Villejuif
               country: France
               short_desc: Enseignement de JAVA, C++ et SQL aux étudiants de troisième année
-              long_desc: FIXME
             - id: J003
               date: 2015
               title: Stage R&D (4 mois)
@@ -69,7 +77,6 @@ CV:
               city: Paris
               country: France
               short_desc: Recherche et développement sur le moteur 3D 3D (C++)
-              long_desc: FIXME
             - id: J002
               period:
                 begin: 2014
@@ -79,7 +86,6 @@ CV:
               city: Villejuif
               country: France
               short_desc: Encadrement des TPs de C et UNIX des étudiants de deuxième année
-              long_desc: FIXME
             - id: J001
               date: 2014
               title: Stage de développement Web (2 mois)
@@ -95,66 +101,54 @@ CV:
             - id: P012
               date: 2016
               name: LyreLand
-              short_desc: Générateur procédural de musique apprenant de fichiers MIDI (JAVA8)
-              long_desc: FIXME
               url: https://github.com/paveyry/LyreLand
+              short_desc: Générateur procédural de musique apprenant de fichiers MIDI (JAVA8)
             - id: P011
               date: 2016
               name: Correcteur orthographique
               short_desc: haute performance et faible coût en RAM (C++)
-              long_desc: FIXME
             - id: P010
               date: 2016
               name: Lecteur de codes barres
               short_desc: développé avec OpenCV (C++)
-              long_desc: FIXME
             - id: P009
               date: 2015
               name: Viola-Jones
-              short_desc: Détection de visages parallélisée (C++ avec TBB)
-              long_desc: FIXME
               url: https://github.com/paveyry/FaceDetection
+              short_desc: Détection de visages parallélisée (C++ avec TBB)
             - id: P008
               date: 2015
               name: Tiger Compiler
               short_desc: Compilateur pour le langage Tiger (C++ avec Bison/Flex)
-              long_desc: FIXME
             - id: P007
               date: 2015
               name: Chess
               short_desc: Jeu d'échecs et IA (C++)
-              long_desc: FIXME
             - id: P006
               date: 2015
               name: MyPhotoshop
               short_desc: Logiciel de retouche d'images et de dessin (JAVA avec Swing)
-              long_desc: FIXME
             - id: P005
               date: 2014
               name: 42sh
               short_desc: Implémentation d'un shell UNIX (bash) (C)
-              long_desc: FIXME
             - id: P004
               date: 2014
               name: MyHTTPd
               short_desc: Serveur HTTP avec daemon (C)
-              long_desc: FIXME
             - id: P003
               date: 2014
               name: Malloc
               short_desc: Implémentation de malloc de type Best-fit (C)
-              long_desc: FIXME
             - id: P002
               date: 2013
               name: OCR
               short_desc: Logiciel de reconnaissance de caractères (OCaml)
-              long_desc: FIXME
             - id: P001
               date: 2012
               name: Metastruggle
-              short_desc: Jeu en 3D de type Super-Smash-Bros (C#)
-              long_desc: FIXME
               url: https://github.com/paveyry/Metastruggle
+              short_desc: Jeu en 3D de type Super-Smash-Bros (C#)
 
 skills:
     name: Compétences techniques
