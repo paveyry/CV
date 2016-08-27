@@ -8,11 +8,14 @@ OUT              = out
 PDFS             = ${OUT}/cv_en.pdf ${OUT}/cv_fr.pdf
 TEXS             = $(PDFS:.pdf=.tex)
 TRASH_FILES      = ${OUT}/*.aux ${OUT}/*.log ${OUT}/*.out
+HTML_OUTPUT      = ${OUT}/index.html
 
-all: ${PDFS} #index.html
+.PHONY: all clean
 
-${OUT}/index.html: ${DATA_DIR}/cv_en.yml ${OUT}
-	cp -r ${TEMPLATE_DIR}/web/* ${OUT}
+all: ${PDFS} ${HTML_OUTPUT}
+
+%.html: ${DATA_DIR}/cv_en.yml ${OUT}
+	cp -r ${TEMPLATE_DIR}/web/* $(dir $@)
 	${BUILDER} --exclude-entries=${EXCLUSIONS_WEB} --type=web $< > $@
 
 ${OUT}/%.tex: ${DATA_DIR}/%.yml ${OUT}
