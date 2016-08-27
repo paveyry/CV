@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/flags.css">
     
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles-6.css">
@@ -29,6 +30,10 @@
 <body>
     <div class="wrapper">
         <div class="sidebar-wrapper">
+            <div class="lang-links">
+                <a class="flag-link"href="index.html"><span class="flag flag-en">&nbsp;</span></a>
+                <a class="flag-link"href="index_fr.html"><span class="flag flag-fr">&nbsp;</span></a>
+            </div>
             <div class="profile-container">
                 <img class="profile" src="assets/images/profile.png" width="150px" alt="" />
                 <h1 class="name">%{{data.personal_info.firstname%}} %{{data.personal_info.lastname%}}</h1>
@@ -42,6 +47,8 @@
                     <li class="website"><i class="fa fa-globe"></i><a href="%{{data.personal_info.website%}}" target="_blank">%{{data.personal_info.website%}}</a></li>
                     <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://%{{data.personal_info.linkedin%}}" target="_blank">%{{data.personal_info.linkedin%}}</a></li>
                     <li class="github"><i class="fa fa-github"></i><a href="https://%{{data.personal_info.github%}}" target="_blank">%{{data.personal_info.github%}}</a></li>
+                    <li class="pdf-fr"><i class="fa fa-file-pdf-o"></i><a href="cv_fr.pdf" target="_blank">Curriculum Vitae (<span class="flag flag-fr">&nbsp;</span>)</a></li>
+                    <li class="pdf-en"><i class="fa fa-file-pdf-o"></i><a href="cv_en.pdf" target="_blank">Curriculum Vitae (<span class="flag flag-en">&nbsp;</span>)</a></li>
                     <!--<li class="twitter"><i class="fa fa-twitter"></i><a href="#" target="_blank">@twittername</a></li>-->
                 </ul>
             </div><!--//contact-container-->

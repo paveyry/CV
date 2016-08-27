@@ -1,0 +1,24 @@
+.flag {
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 1.33333333em;
+    line-height: 1em;
+}
+
+.flag-fr {
+    background-image: url(../images/flags/fr.svg);
+}
+
+.flag-en {
+    background-image: url(../images/flags/gb.svg);
+}
+
+.lang-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 3px;
+}

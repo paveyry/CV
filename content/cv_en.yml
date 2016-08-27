@@ -161,19 +161,19 @@ skills:
               content:
                 - id: S001
                   name: C++
-                  percent: 90
+                  percent: 95
                 - id: S002
                   name: C
-                  percent: 80
+                  percent: 85
                 - id: S003
                   name: JAVA
-                  percent: 85
+                  percent: 90
                 - id: S004
                   name: Python
-                  percent: 75
+                  percent: 80
                 - id: S005
                   name: SQL
-                  percent: 75
+                  percent: 80
                 - id: S006
                   name: LaTeX
                   percent: 75
@@ -181,16 +181,16 @@ skills:
               content: 
                 - id: S007
                   name: PHP
-                  percent: 60
+                  percent: 65
                 - id: S008
                   name: JS
-                  percent: 65
+                  percent: 70
                 - id: S009
                   name: Matlab
-                  percent: 60
+                  percent: 65
                 - id: S010
                   name: C\#
-                  percent: 60
+                  percent: 70
                 - id: S011
                   name: OCaml
                   percent: 60
