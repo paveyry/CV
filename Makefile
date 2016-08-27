@@ -1,24 +1,26 @@
-LATEX        = pdflatex
-BUILDER      = ./resume_builder.py
-EXCLUSIONS   = P003,P004,P006,P007,P010
-DATA_DIR     = content
-OUT          = out
-PDFS         = ${OUT}/cv_en.pdf ${OUT}/cv_fr.pdf
-TEXS         = $(PDFS:.pdf=.tex)
-TRASH_FILES  = ${OUT}/*.aux ${OUT}/*.log ${OUT}/*.out
+LATEX            = pdflatex
+BUILDER          = ./resume_builder.py
+EXCLUSIONS_WEB   = P003,P004,P006,P007,P010
+EXCLUSIONS_PDF   = P003,P004,P006,P007,P010
+DATA_DIR         = content
+TEMPLATE_DIR     = templates
+OUT              = out
+PDFS             = ${OUT}/cv_en.pdf ${OUT}/cv_fr.pdf
+TEXS             = $(PDFS:.pdf=.tex)
+TRASH_FILES      = ${OUT}/*.aux ${OUT}/*.log ${OUT}/*.out
 
-all: ${PDFS} web
-	${RM} ${TRASH_FILES}
+all: ${PDFS} #index.html
 
-web:
-	cp -r CV_Web/* out/
+${OUT}/index.html: ${DATA_DIR}/cv_en.yml ${OUT}
+	cp -r ${TEMPLATE_DIR}/web/* ${OUT}
+	${BUILDER} --exclude-entries=${EXCLUSIONS_WEB} --type=web $< > $@
 
 ${OUT}/%.tex: ${DATA_DIR}/%.yml ${OUT}
-	${BUILDER} --exclude-entries=${EXCLUSIONS} $< > $@
+	${BUILDER} --exclude-entries=${EXCLUSIONS_PDF} --type=pdf $< > $@
 	
 %.pdf: %.tex
 	$(LATEX) -output-directory ${OUT} $<
-	${RM} $<
+	${RM} ${TRASH_FILES} $<
 
 ${OUT}:
 	mkdir -p $@
