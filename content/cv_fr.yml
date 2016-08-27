@@ -97,6 +97,7 @@ CV:
               name: LyreLand
               short_desc: Générateur procédural de musique apprenant de fichiers MIDI (JAVA8)
               long_desc: FIXME
+              url: https://github.com/paveyry/LyreLand
             - id: P011
               date: 2016
               name: Correcteur orthographique
@@ -112,6 +113,7 @@ CV:
               name: Viola-Jones
               short_desc: Détection de visages parallélisée (C++ avec TBB)
               long_desc: FIXME
+              url: https://github.com/paveyry/FaceDetection
             - id: P008
               date: 2015
               name: Tiger Compiler
@@ -152,6 +154,7 @@ CV:
               name: Metastruggle
               short_desc: Jeu en 3D de type Super-Smash-Bros (C#)
               long_desc: FIXME
+              url: https://github.com/paveyry/Metastruggle
 
 skills:
     name: Compétences techniques
@@ -203,6 +206,7 @@ skills:
                 - id: S013
                   name: Swift
                   percent: 25
+
         - name: Divers
           entries:
             - name: Systèmes
