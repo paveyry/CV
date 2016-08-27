@@ -63,7 +63,7 @@ CV:
               long_desc: FIXME
             - id: J003
               date: 2015
-              title: R\&D intern (4 months)
+              title: R&D intern (4 months)
               company: Aerys
               city: Paris
               country: France
@@ -149,7 +149,7 @@ CV:
             - id: P001
               date: 2012
               name: Metastruggle
-              short_desc: Super-Smash-Bros-like 3D game (C\#)
+              short_desc: Super-Smash-Bros-like 3D game (C#)
               long_desc: FIXME
 
 skills:
@@ -189,7 +189,7 @@ skills:
                   name: Matlab
                   percent: 65
                 - id: S010
-                  name: C\#
+                  name: C#
                   percent: 70
                 - id: S011
                   name: OCaml

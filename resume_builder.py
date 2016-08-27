@@ -24,6 +24,16 @@ import sys
 logging.basicConfig(level=logging.DEBUG)
 
 class FormatHelper():
+    def escape_latex(self, string):
+        if not string:
+            return ""
+        logging.debug("Replacing " + string)
+        string = string.replace('&', '\\&')
+        string = string.replace('_', '\\_')
+        string = string.replace('#', '\\#')
+        string = string.replace('...', '\\ldots')
+        return string
+
     def skill_list_format(self, skill_list):
         string = ''
         if type(skill_list) == str:

@@ -28,9 +28,9 @@
 \section{%{{ data.CV.cursus.name %}}}
     %{ for entry in data.CV.cursus.entries %}
         %{ if entry.date %}
-            \tldatecventry{%{{ entry.date %}}}{%{{ entry.title %}}}{%{{ entry.additional_info %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{}
+            \tldatecventry{%{{ entry.date %}}}{%{{ entry.title %}}}{%{{ helper.escape_latex(entry.additional_info) %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{}
         %{ else %}
-            \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.title %}}}{%{{ entry.additional_info %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{}
+            \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.title %}}}{%{{ helper.escape_latex(entry.additional_info) %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{}
         %{ endif %}
     %{ endfor %}
 
@@ -38,18 +38,18 @@
 \section{%{{ data.CV.jobs.name %}}}
     %{ for entry in data.CV.jobs.entries %}
         %{ if entry.date %}
-            \tldatecventry{%{{ entry.date %}}}{%{{ entry.title %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
+            \tldatecventry{%{{ entry.date %}}}{%{{ helper.escape_latex(entry.title) %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
         %{ else %}
-            \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.title %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
+            \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ helper.escape_latex(entry.title) %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
         %{ endif %}
     %{ endfor %}
 
 \section{%{{ data.CV.projects.name %}}}
     %{ for entry in data.CV.projects.entries %}
         %{ if entry.date %}
-            \tldatecventry{%{{ entry.date %}}}{%{{ entry.name %}}}{%{{ entry.short_desc %}}}{}{}{}
+            \tldatecventry{%{{ entry.date %}}}{%{{ entry.name %}}}{%{{ helper.escape_latex(entry.short_desc) %}}}{}{}{}
         %{ else %}
-            \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.name %}}}{%{{ entry.short_desc %}}}{}{}{}
+            \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.name %}}}{%{{ helper.escape_latex(entry.short_desc) %}}}{}{}{}
         %{ endif %}
     %{ endfor %}
 
@@ -57,7 +57,7 @@
     %{ for subsection in data.skills.entries %}
         \subsection{%{{ subsection.name %}}}
             %{ for entry in subsection.entries %}
-                \cvitem{%{{ entry.name %}}}{%{{ helper.skill_list_format(entry.content) %}}}{}{}{}
+                \cvitem{%{{ helper.escape_latex(entry.name) %}}}{%{{ helper.escape_latex(helper.skill_list_format(entry.content)) %}}}{}{}{}
             %{ endfor %}
     %{ endfor %}
 

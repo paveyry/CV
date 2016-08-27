@@ -64,7 +64,7 @@ CV:
               long_desc: FIXME
             - id: J003
               date: 2015
-              title: Stage R\&D (4 mois)
+              title: Stage R&D (4 mois)
               company: Aerys
               city: Paris
               country: France
@@ -150,7 +150,7 @@ CV:
             - id: P001
               date: 2012
               name: Metastruggle
-              short_desc: Jeu en 3D de type Super-Smash-Bros (C\#)
+              short_desc: Jeu en 3D de type Super-Smash-Bros (C#)
               long_desc: FIXME
 
 skills:
@@ -190,7 +190,7 @@ skills:
                   name: Matlab
                   percent: 65
                 - id: S010
-                  name: C\#
+                  name: C#
                   percent: 70
                 - id: S011
                   name: OCaml
