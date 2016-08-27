@@ -39,8 +39,7 @@ CV:
               country: France
 
     jobs:
-        experience_name: Expériences
-        name: Emplois et stages
+        name: Expérience professionnelle
         entries:
             - id: J004
               period:
@@ -148,12 +147,51 @@ skills:
     entries:
         - name: Langages de programmation
           entries:
-            - name: Compétent
-              content: C++, C, JAVA, Python, SQL, \LaTeX
+            - name: Expert
+              content:
+                - id: S001
+                  name: C++
+                  percent: 90
+                - id: S002
+                  name: C
+                  percent: 80
+                - id: S003
+                  name: JAVA
+                  percent: 85
+                - id: S004
+                  name: Python
+                  percent: 75
+                - id: S005
+                  name: SQL
+                  percent: 75
+                - id: S006
+                  name: LaTeX
+                  percent: 75
             - name: Avancé
-              content: PHP, JS, Matlab, C\#, OCaml
+              content: 
+                - id: S007
+                  name: PHP
+                  percent: 60
+                - id: S008
+                  name: JS
+                  percent: 65
+                - id: S009
+                  name: Matlab
+                  percent: 60
+                - id: S010
+                  name: C\#
+                  percent: 60
+                - id: S011
+                  name: OCaml
+                  percent: 60
             - name: Débutant
-              content: Go, Swift
+              content:
+                - id: S012
+                  name: Go
+                  percent: 30
+                - id: S013
+                  name: Swift
+                  percent: 25
         - name: Divers
           entries:
             - name: Systèmes
