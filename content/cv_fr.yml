@@ -5,9 +5,20 @@ personal_info:
     address: 14 rue Carnot, Appt 308
     city: 94800 Villejuif
     mobile: +33 6 48 79 87 79
-    email: veyry\_p@epita.fr
-    website: http://pa.veyry.fr
+    email: pa.veyry@gmail.com
+    website: pa.veyry.fr
     extrainfo: 22 ans -- Permis B
+    linkedin: www.linkedin.com/in/paveyry
+    github: github.com/paveyry
+
+presentation:
+    title: Profil
+    content: >
+        Étudiant en 4e année à l'EPITA, j'enseigne la programmation en C++, JAVA, et C
+        aux étudiants de 3e année au sein d'une équipe d'une trentaine d'assistants.
+        Dans le cadre de ma majeure SCIA, je me spécialise dans des domaines liés à l'IA
+        comme le machine-learning, le traitement d'image, ou le text-mining.
+        Je suis actuellement à la recherche d'un stage de 6 mois entre mars et août 2017.
 
 period:
     begin: 2011
@@ -22,7 +33,7 @@ CV:
                 begin: 2012
                 end:   0
               title: École d'ingénieurs en Informatique
-              additional_info: Spé SCIA (Machine learning, text mining, image processing\ldots)
+              additional_info: Spé SCIA (Machine learning, text mining, image processing...)
               school: EPITA
               city: Le Kremlin-Bicêtre
               country: France

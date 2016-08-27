@@ -5,9 +5,19 @@ personal_info:
     address: 14 rue Carnot, Appt 308
     city: 94800 Villejuif
     mobile: +33 6 48 79 87 79
-    email: veyry\_p@epita.fr
-    website: http://pa.veyry.fr
+    email: pa.veyry@gmail.com
+    website: pa.veyry.fr
     extrainfo: 22 years old
+    linkedin: www.linkedin.com/in/paveyry
+    github: github.com/paveyry
+
+presentation:
+    title: Profile
+    content: >
+        Fourth-year student at EPITA, I teach C++, JAVA, and C programming to third-year
+        students in a team of thirty teaching assistants. I am specializing in various
+        AI-related domains like machine-learning, image processing, or text-mining.
+        I am currently looking for a 6-month internship from March to August 2017.
 
 period:
     begin: 2011
@@ -22,7 +32,7 @@ CV:
                 begin: 2012
                 end:   0
               title: Computer Science college
-              additional_info: SCIA major (Machine learning, text mining, image processing\ldots)
+              additional_info: SCIA major (Machine learning, text mining, image processing...)
               school: EPITA
               city: Le Kremlin-Bicêtre
               country: France
@@ -34,8 +44,8 @@ CV:
               country: United Kingdom
             - id: C001
               date: 2012
-              title: Baccalauréat (Hich School degree, scientific option)
-              additional_info: with Highest Honours
+              title: Baccalauréat
+              additional_info:  (Hich School degree, scientific option) with Highest Honours
               country: France
 
     jobs:
