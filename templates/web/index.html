@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>%{{data.personal_info.firstname%}} %{{data.personal_info.lastname%}} - %{{data.personal_info.title%}}</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="author" content="%{{data.personal_info.firstname%}} %{{data.personal_info.lastname%}}">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles-6.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="assets/images/profile.png" width="150px" alt="" />
+                <h1 class="name">%{{data.personal_info.firstname%}} %{{data.personal_info.lastname%}}</h1>
+                <h3 class="tagline">%{{data.personal_info.title%}}</h3>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: %{{data.personal_info.email%}}">%{{data.personal_info.email%}}</a></li>
+                    <li class="phone"><i class="fa fa-phone"></i><a href="tel:%{{data.personal_info.mobile%}}">%{{data.personal_info.mobile%}}</a></li>
+                    <li class="website"><i class="fa fa-globe"></i><a href="%{{data.personal_info.website%}}" target="_blank">%{{data.personal_info.website%}}</a></li>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://%{{data.personal_info.linkedin%}}" target="_blank">%{{data.personal_info.linkedin%}}</a></li>
+                    <li class="github"><i class="fa fa-github"></i><a href="https://%{{data.personal_info.github%}}" target="_blank">%{{data.personal_info.github%}}</a></li>
+                    <!--<li class="twitter"><i class="fa fa-twitter"></i><a href="#" target="_blank">@twittername</a></li>-->
+                </ul>
+            </div><!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">%{{data.CV.cursus.name%}}</h2>
+                %{ for entry in data.CV.cursus.entries %}
+                    <div class="item">
+                        <h4 class="degree">%{{ entry.title %}}%{ if entry.additional_info %} <br/> %{{ entry.additional_info %}}%{ endif %}
+                            <h5 class="meta">%{ if entry.school%}%{{ entry.school %}} - %{ endif %}%{{ entry.city %}} %{{ entry.country %}}</h5>
+                        <div class="time">
+                            %{ if entry.period %}
+                                %{{ entry.period.begin %}} - %{if entry.period.end == 0%}Present%{else%}%{{entry.period.end%}}%{endif%}
+                            %{ else %}
+                                %{{ entry.date %}}
+                            %{ endif %}
+                        </div>
+                    </div><!--//item-->
+                %{ endfor %}
+            </div><!--//education-container-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">%{{ data.languages.name %}}</h2>
+                <ul class="list-unstyled interests-list">
+                    %{ for lang in data.languages.entries %}
+                        <li>%{{ lang.name %}} - <span class="lang-desc">%{{ lang.desc %}}</span></li>
+                    %{ endfor %}
+                </ul>
+            </div><!--//interests-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">%{{ data.interests.name %}}</h2>
+                <ul class="list-unstyled interests-list">
+                    %{ for inter in data.interests.entries %}
+                        <li>%{{ inter.name %}} - <span class="lang-desc">%{{ inter.desc %}}</span></li>
+                    %{ endfor %}
+                </ul>
+            </div><!--//interests-->
+            
+        </div><!--//sidebar-wrapper-->
+        
+        <div class="main-wrapper">
+            
+            <section class="section summary-section">
+                <h2 class="section-title"><i class="fa fa-user"></i>%{{ data.presentation.title %}}</h2>
+                <div class="summary">
+                    <p>%{{ data.presentation.content %}}</p>
+                </div><!--//summary-->
+            </section><!--//section-->
+            
+            <section class="section experiences-section">
+                <h2 class="section-title"><i class="fa fa-briefcase"></i>%{{ data.CV.jobs.name %}}</h2>
+
+                %{ for entry in data.CV.jobs.entries %}
+                    <div class="item">
+                        <div class="meta">
+                            <div class="upper-row">
+                                <h3 class="job-title">%{{ entry.title %}}</h3>
+                                <div class="time">
+                                     %{ if entry.period %}
+                                        %{{ entry.period.begin %}} - %{if entry.period.end == 0%}Present%{else%}%{{entry.period.end%}}%{endif%}
+                                    %{ else %}
+                                        %{{ entry.date %}}
+                                    %{ endif %}
+                                </div>
+                            </div><!--//upper-row-->
+                            <div class="company">%{{ entry.company %}}, %{{ entry.city %}}, %{{ entry.country %}}</div>
+                        </div><!--//meta-->
+                    <div class="details">
+                        <p>%{{ entry.short_desc %}}</p>  
+                    </div><!--//details-->
+                </div><!--//item-->
+                %{ endfor %}
+            </section><!--//section-->
+            
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-archive"></i>%{{ data.CV.projects.name %}}</h2>
+                %{ for entry in data.CV.projects.entries %}
+                    <div class="item">
+                        <span class="project-title">
+                            <a href="%{ if entry.url %}%{{ entry.url %}}%{ else %}#%{ endif %}">
+                                %{{ entry.name %}}
+                            </a>
+                        </span> - <span class="project-tagline">
+                            %{{ entry.short_desc %}}
+                        </span>
+                    </div>
+                %{ endfor %}
+            </section><!--//section-->
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-rocket"></i>%{{ data.skills.name %}}</h2>
+                <div class="skillset">
+                    %{ for cat in data.skills.entries[0].entries %}
+                        %{ for skill in cat.content %}
+                            <div class="item">
+                                <h3 class="level-title">%{{ skill.name %}}</h3>
+                                <div class="level-bar">
+                                    <div class="level-bar-inner" data-level="%{{ skill.percent %}}%">
+                                    </div>                                      
+                                </div><!--//level-bar-->                                 
+                            </div><!--//item-->
+                        %{ endfor %}
+                    %{ endfor %}
+                </div>  
+            </section><!--//skills-section-->
+            
+        </div><!--//main-body-->
+    </div>
+ 
+    <footer class="footer">
+        <div class="text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
+
