@@ -3,7 +3,7 @@
 """Resume Builder.
 
 Usage:
-    resume_builder.py [--exclude-entries=<entries_to_exclude>] <input>
+    resume_builder.py [--exclude-entries=<entries_to_exclude>] --type=<type> <input>
     resume_builder.py (-h | --help)
     resume_builder.py --version
 
@@ -11,6 +11,7 @@ Options:
     -h --help                                   Show this message
     --exclude-entries=<entries_to_exclude>      Select the IDs of the entries that must not be inserted in the Resume
                                                 (separated with commas)
+    --type=<type>                               Select the type of CV to create (Web or LaTeX)
 """
 
 import docopt
@@ -64,7 +65,14 @@ if __name__ == '__main__':
 
     data = load_data(exclusions, args['<input>'])
 
-    latex_template = make_jinja_env("templates", "cv_template.tex")
-    output = latex_template.render(data=data)
+    template_file = 'index.html'
+    template_dir = 'templates/web'
+    if args['--type'] == 'latex' or args['--type'] == 'pdf':
+        template_file = 'cv_template.tex'
+        template_dir = 'templates'
+
+
+    template = make_jinja_env(template_dir, template_file)
+    output = template.render(data=data, helper=FormatHelper())
     sys.stdout.buffer.write(output.encode('utf-8'))
 
