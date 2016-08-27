@@ -35,30 +35,29 @@
     %{ endfor %}
 
 
-\section{%{{ data.CV.jobs.experience_name %}}}
-    \subsection{%{{ data.CV.jobs.name %}}}
-        %{ for entry in data.CV.jobs.entries %}
-            %{ if entry.date %}
-                \tldatecventry{%{{ entry.date %}}}{%{{ entry.title %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
-            %{ else %}
-                \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.title %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
-            %{ endif %}
-        %{ endfor %}
+\section{%{{ data.CV.jobs.name %}}}
+    %{ for entry in data.CV.jobs.entries %}
+        %{ if entry.date %}
+            \tldatecventry{%{{ entry.date %}}}{%{{ entry.title %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
+        %{ else %}
+            \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.title %}}}{%{{ entry.company %}}}{%{{ entry.city %}}}{%{{ entry.country %}}}{%{{ entry.short_desc %}}}
+        %{ endif %}
+    %{ endfor %}
 
-    \subsection{%{{ data.CV.projects.name %}}}
-        %{ for entry in data.CV.projects.entries %}
-            %{ if entry.date %}
-                \tldatecventry{%{{ entry.date %}}}{%{{ entry.name %}}}{%{{ entry.short_desc %}}}{}{}{}
-            %{ else %}
-                \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.name %}}}{%{{ entry.short_desc %}}}{}{}{}
-            %{ endif %}
-        %{ endfor %}
+\section{%{{ data.CV.projects.name %}}}
+    %{ for entry in data.CV.projects.entries %}
+        %{ if entry.date %}
+            \tldatecventry{%{{ entry.date %}}}{%{{ entry.name %}}}{%{{ entry.short_desc %}}}{}{}{}
+        %{ else %}
+            \tlcventry{%{{ entry.period.begin %}}}{%{{ entry.period.end %}}}{%{{ entry.name %}}}{%{{ entry.short_desc %}}}{}{}{}
+        %{ endif %}
+    %{ endfor %}
 
 \section{%{{ data.skills.name %}}}
     %{ for subsection in data.skills.entries %}
         \subsection{%{{ subsection.name %}}}
             %{ for entry in subsection.entries %}
-                \cvitem{%{{ entry.name %}}}{%{{ entry.content %}}}{}{}{}{}
+                \cvitem{%{{ entry.name %}}}{%{{ helper.skill_list_format(entry.content) %}}}{}{}{}
             %{ endfor %}
     %{ endfor %}
 

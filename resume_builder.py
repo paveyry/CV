@@ -22,8 +22,20 @@ import sys
 
 logging.basicConfig(level=logging.DEBUG)
 
+class FormatHelper():
+    def skill_list_format(self, skill_list):
+        string = ''
+        if type(skill_list) == str:
+            return skill_list
+        for i in range(0, len(skill_list)):
+            string += skill_list[i]['name']
+            if i < len(skill_list) - 1:
+                string += ', '
+        return string
 
-def load_data(exclusions, yaml_path):
+
+
+def load_data(exclusions, yaml_path) -> dict:
     logging.debug("Loading data from {}".format(yaml_path))
     data = yaml.load(open(yaml_path, encoding='utf-8'))
     for category, catval in data['CV'].items():
