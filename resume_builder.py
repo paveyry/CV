@@ -50,9 +50,7 @@ def load_data(exclusions, yaml_path) -> dict:
     logging.debug("Loading data from {}".format(yaml_path))
     data = yaml.load(open(yaml_path, encoding='utf-8'))
     for category, catval in data['CV'].items():
-        for entry in catval['entries']:
-            if entry['id'] in exclusions:
-                catval['entries'].remove(entry)
+        catval['entries'][:] = [x for x in catval['entries'] if x['id'] not in exclusions]
     return data
 
 def make_jinja_env(template_dir, template_file):
@@ -72,6 +70,9 @@ if __name__ == '__main__':
     exclusions = []
     if args['--exclude-entries']:
         exclusions = args['--exclude-entries'].split(',')
+
+    for a in exclusions:
+        logging.debug("exc:" + a + ";")
 
     data = load_data(exclusions, args['<input>'])
 

@@ -1,7 +1,7 @@
 LATEX            = pdflatex
 BUILDER          = ./resume_builder.py
-EXCLUSIONS_WEB   = P003,P004,P006,P007,P010
-EXCLUSIONS_PDF   = P003,P004,P006,P007,P010
+EXCLUSIONS_WEB   = P003
+EXCLUSIONS_PDF   = P003,P004,P006,P007
 DATA_DIR         = content
 TEMPLATE_DIR     = templates
 OUT              = out
