@@ -147,7 +147,7 @@ CV:
               date: 2016
               name: LyreLand
               url: https://github.com/paveyry/LyreLand
-              short_desc: Music procedural generator that learns from MIDI (Java8).
+              short_desc: Music procedural generator that learns from MIDI (Java8)
               long_desc: >
                   End of studies' project. Developed with JAVA 8 and completely
                   open-source, LyreLand embodies several modules:<ul>
