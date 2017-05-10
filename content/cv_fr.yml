@@ -1,10 +1,10 @@
 personal_info:
     firstname: Pierre-Alexandre
     lastname: Veyry
-    title: Étudiant en ingénierie informatique et assistant enseignant
-    address: 14 rue Carnot, Appt 308
-    city: 94800 Villejuif
-    mobile: +33 6 48 79 87 79
+    title: Data Scientist à Arista Networks
+    address: Apartment 6 Block 5 Gallery Quay
+    city: Dublin 2
+    mobile: +353 (0) 83 873 8679
     email: pa.veyry@gmail.com
     website: pa.veyry.fr
     extrainfo: 22 ans -- Permis B
@@ -14,15 +14,15 @@ personal_info:
 presentation:
     title: Profil
     content: >
-        Étudiant en 5e année à l'EPITA, j'enseigne la programmation en C++, JAVA, et C
-        aux étudiants de 3e année au sein d'une équipe d'une trentaine d'assistants.
-        Dans le cadre de ma majeure SCIA, je me spécialise dans des domaines liés à l'IA
-        comme le machine-learning, le traitement d'image, ou le text-mining.
-        Je suis actuellement à la recherche d'un stage de 6 mois entre mars et août 2017.
+        Software Engineer au sein d'Arista Networks, je me spécialise dans les domaines
+        liés à la data science et le machine learning. Bien que je sois ouvert à toute nouvelle
+        technologie, mes langages de prédilection sont C++, Python, JAVA et C. Mes centres
+        d'intérêts sont divers et englobent notamment l'actualité scientifique et technologique,
+        la musique, la littérature et l'histoire de l'Art.
 
 period:
     begin: 2011
-    end:   2017
+    end:   2018
 
 CV:
     cursus:
@@ -31,7 +31,7 @@ CV:
             - id: C003
               period:
                 begin: 2012
-                end:   0
+                end:   2017
               title: École d'ingénieurs en Informatique
               additional_info: Spé SCIA (Machine learning, text mining, image processing...)
               school: EPITA
@@ -54,22 +54,22 @@ CV:
         entries:
             - id: J005
               period:
-                begin: 2016
-                end:   0
-              title: Assistant enseignant (ACU)
-              company: EPITA
-              city: Villejuif
-              country: France
-              short_desc: Enseignement de UNIX, C, et C++ aux étudiants de troisième année.
+                begin: 2017
+                end: 0
+              title: Software Engineer / Data Scientist
+              company: Arista Networks
+              city: Dublin
+              country: Irlande
+              short_desc: Projets d'analyse de données utilisant le Machine Learning.
             - id: J004
               period:
                 begin: 2015
-                end:   2016
-              title: Assistant enseignant (YAKA)
+                end:   2017
+              title: Assistant enseignant (YAKA/ACU)
               company: EPITA
               city: Villejuif
               country: France
-              short_desc: Enseignement de JAVA, C++ et SQL aux étudiants de troisième année
+              short_desc: Enseignement de C++, JAVA, C, SQL, et UNIX à deux promotions d'étudiants de troisième année.
             - id: J003
               date: 2015
               title: Stage R&D (4 mois)
@@ -110,6 +110,7 @@ CV:
             - id: P010
               date: 2016
               name: Lecteur de codes barres
+              url: https://github.com/paveyry/BarCodeReader
               short_desc: développé avec OpenCV (C++)
             - id: P009
               date: 2015
@@ -160,15 +161,15 @@ skills:
                 - id: S001
                   name: C++
                   percent: 95
+                - id: S004
+                  name: Python
+                  percent: 95
                 - id: S002
                   name: C
                   percent: 85
                 - id: S003
                   name: JAVA
                   percent: 90
-                - id: S004
-                  name: Python
-                  percent: 80
                 - id: S005
                   name: SQL
                   percent: 80
@@ -189,14 +190,14 @@ skills:
                 - id: S010
                   name: C#
                   percent: 70
-                - id: S011
-                  name: OCaml
-                  percent: 60
-            - name: Débutant
-              content:
                 - id: S012
                   name: Go
-                  percent: 30
+                  percent: 55
+            - name: Débutant
+              content:
+                - id: S011
+                  name: OCaml
+                  percent: 40
                 - id: S013
                   name: Swift
                   percent: 25

@@ -1,10 +1,10 @@
 personal_info:
     firstname: Pierre-Alexandre
     lastname: Veyry
-    title: Computer Science student and Teaching assistant
-    address: 14 rue Carnot, Appt 308
-    city: 94800 Villejuif
-    mobile: +33 6 48 79 87 79
+    title: Data Scientist at Arista Networks
+    address: Apartment 6 Block 5 Gallery Quay
+    city: Dublin 2
+    mobile: +353 (0) 83 873 8679
     email: pa.veyry@gmail.com
     website: pa.veyry.fr
     extrainfo: 22 years old
@@ -14,14 +14,15 @@ personal_info:
 presentation:
     title: Profile
     content: >
-        Fifth-year student at EPITA, I teach C++, JAVA, and C programming to third-year
-        students in a team of thirty teaching assistants. I am specializing in various
-        AI-related domains like machine-learning, image processing, or text-mining.
-        I am currently looking for a 6-month internship from March to August 2017.
+        Software Engineer at Arista Networks, I specialize in data-science and machine-learning.
+        Though I am open to any new technology, the languages I am most
+        familiar with are C++, Python, JAVA, and C. My interests are various and involve -- among
+        others -- scientific and technological innovation, music, literature, and history of Art.
+
 
 period:
     begin: 2011
-    end:   2017
+    end:   2018
 
 CV:
     cursus:
@@ -30,7 +31,7 @@ CV:
             - id: C003
               period:
                 begin: 2012
-                end:   0
+                end:   2017
               title: Computer Science college
               additional_info: SCIA major (Machine learning, text mining, image processing...)
               school: EPITA
@@ -49,42 +50,39 @@ CV:
               country: France
 
     jobs:
-        name: Experiences
+        name: Experience
         entries:
             - id: J005
               period:
-                begin: 2016
-                end:   0
-              title: Teaching Assistant (ACU)
-              company: EPITA
-              city: Villejuif
-              country: France
-              short_desc: Teaching UNIX, C, and C++ to third-year students
+                begin: 2017
+                end: 0
+              title: Software Engineer / Data Scientist
+              company: Arista Networks
+              city: Dublin
+              country: Ireland
+              short_desc: Data analysis projects using Machine Learning techniques
               long_desc: >
-                  Organising practical UNIX, C, and C++ programming courses and projects
-                  for 400+ third-year students as part of a team of 30 assistants. This job
-                  is in the continuity of the YAKA role, but with students from
-                  a different year and other notions to teach.
+                  Data analysis projects involving Machine Learning techniques using the
+                  Python scientific ecosystem, Keras, and the Go language.
             - id: J004
               period:
                 begin: 2015
-                end:   2016
-              title: Teaching Assistant (YAKA)
+                end: 2017
+              title: Teaching Assistant (YAKA/ACU)
               company: EPITA
               city: Villejuif
               country: France
-              short_desc: Teaching C++, JAVA and SQL to third-year students
+              short_desc: Teaching C++, JAVA, C, SQL, and UNIX to two years of 400+ third-year students
               long_desc: >
-                  Organising practical C++, JAVA, and SQL programming courses and projects
-                  for 300+ third-year students as part of a team of 30 assistants. Our job was to
+                  Organising practical C++, JAVA, C, SQL, and UNIX courses and projects
+                  for 400+ third-year students as part of a team of 30 assistants. Our job was to
                   prepare the subjects, organize courses, help the students understand
                   programming and debug their code, and check their work. I was responsible
-                  of the Chess project, which includes the development of a complete Chess
-                  game and a chess AI in C++ 14. I am also the quality manager, in charge
+                  of the Chess project (complete Chess game engine with an AI in C++ 14), and of the Formula
+                  One project, a race car driving AI. I was also the quality manager, in charge
                   of checking all the documents (courses, subjects, exams...) provided
                   to the students to ensure that the quality (grammar, content, difficulty)
-                  is sufficient.
-
+                  was sufficient.
             - id: J003
               date: 2015
               title: R&D intern (4 months)
@@ -172,6 +170,7 @@ CV:
             - id: P010
               date: 2016
               name: Barcode reader
+              url: https://github.com/paveyry/BarCodeReader
               short_desc: Barcode detector and reader (C++ with OpenCV)
               long_desc: >
                   Program developed in C++ with OpenCV. It can detect several
@@ -261,15 +260,15 @@ skills:
                 - id: S001
                   name: C++
                   percent: 95
+                - id: S004
+                  name: Python
+                  percent: 95
                 - id: S002
                   name: C
                   percent: 85
                 - id: S003
                   name: JAVA
                   percent: 90
-                - id: S004
-                  name: Python
-                  percent: 80
                 - id: S005
                   name: SQL
                   percent: 80
@@ -290,14 +289,14 @@ skills:
                 - id: S010
                   name: C#
                   percent: 70
-                - id: S011
-                  name: OCaml
-                  percent: 60
-            - name: Beginner
-              content:
                 - id: S012
                   name: Go
-                  percent: 30
+                  percent: 55
+            - name: Beginner
+              content:
+                - id: S011
+                  name: OCaml
+                  percent: 40
                 - id: S013
                   name: Swift
                   percent: 25
