@@ -275,6 +275,9 @@ skills:
                 - id: S006
                   name: LaTeX
                   percent: 75
+                - id: S012
+                  name: Go
+                  percent: 85
             - name: Experimented
               content: 
                 - id: S007
@@ -289,9 +292,6 @@ skills:
                 - id: S010
                   name: C#
                   percent: 70
-                - id: S012
-                  name: Go
-                  percent: 55
             - name: Beginner
               content:
                 - id: S011
