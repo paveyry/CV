@@ -14,11 +14,15 @@ personal_info:
 presentation:
     title: Profil
     content: >
-        Software Engineer au sein d'Arista Networks, je me spécialise dans les domaines
-        liés à la data science et le machine learning. Bien que je sois ouvert à toute nouvelle
-        technologie, mes langages de prédilection sont C++, Python, JAVA et C. Mes centres
-        d'intérêts sont divers et englobent notamment l'actualité scientifique et technologique,
-        la musique, la littérature et l'histoire de l'Art.
+        <p>Ingénieur Software diplômé de l'EPITA, spécialisation Machine-Learning, Data-Science et Traitement d'Image,
+        je travaille actuellement à Arista Networks Dublin sur un système d'analyse de données
+        temps-réel au sein d'un système distribué avec du machine-learning non-supervisé.</p>
+
+        <p>J'ai travaillé pendant 8 mois sur un projet de machine-learning pour l'analyse et la composition
+        de musique appelé LyreLand, mentionné dans <b><a href="https://www.futura-sciences.com/tech/actualites/technologie-lyreland-ia-compose-musique-69660">un article du magazine Futura-Sciences</a></b>.</p>
+
+        <p>Mes centres d'intérêts sont très variés, allant de la recherche scientifique à
+        l'art et la musique, en passant notamment par l'économie, la philosophie, la dialectique, l'histoire, et la littérature.</p>
 
 period:
     begin: 2011

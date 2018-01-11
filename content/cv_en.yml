@@ -14,10 +14,14 @@ personal_info:
 presentation:
     title: Profile
     content: >
-        Software Engineer at Arista Networks, I specialize in data-science and machine-learning.
-        Though I am open to any new technology, the languages I am most
-        familiar with are C++, Python, JAVA, and C. My interests are various and involve -- among
-        others -- scientific and technological innovation, music, literature, and history of Art.
+        <p>Graduate Software Engineer from EPITA, specialised in Machine-Learning,
+        Data-Science, and Image Processing, I am currently working at Arista Networks Dublin on a
+        real-time data analysis system integrated in a distributed system using non-supervised machine-learning.</p>
+
+        <p>I worked for 8 months on a machine-learning project for music analysis and composition called LyreLand
+        that was featured in <b><a href="https://www.futura-sciences.com/tech/actualites/technologie-lyreland-ia-compose-musique-69660/">an article of French scientific magazine Futura-Sciences</a></b>.</p>
+
+        My personal areas of interest vary from scientific research to art and music, including economy, philosophy, dialectics, history, and literature.
 
 
 period:
@@ -147,6 +151,7 @@ CV:
               url: https://github.com/paveyry/LyreLand
               short_desc: Music procedural generator that learns from MIDI (Java8)
               long_desc: >
+                  Featured in <a href="https://www.futura-sciences.com/tech/actualites/technologie-lyreland-ia-compose-musique-69660">an article in French scientific magazine Futura-Sciences</a><br/>
                   End of studies' project. Developed with JAVA 8 and completely
                   open-source, LyreLand embodies several modules:<ul>
                   <li>harmonic, rhythmic, and melodic analysis of MIDI files</li>
